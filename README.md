@@ -205,6 +205,16 @@ deal: {
 
 ## ٦) النشر (خلّي الموقع أونلاين)
 
+**الموقع منشور حاليًا على GitHub Pages:**
+
+> 🔗 <https://mohanedhany111111-stack.github.io/pc-tech-store/>
+>
+> المستودع: <https://github.com/mohanedhany111111-stack/pc-tech-store>
+
+عشان تحدّث الموقع بعد أي تعديل، ارفع الملفات المعدّلة على نفس المستودع
+(Settings → Pages متظبطة على `main` / root). أي push جديد بينشر أوتوماتيك
+في خلال دقيقة.
+
 الموقع ملفات ثابتة، فأي استضافة ثابتة تنفع:
 
 ### أسهل طريقة — Netlify Drop
