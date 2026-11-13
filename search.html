@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ابحث — PC TECH STORE</title>
+  <meta name="description" content="ابحث في منتجات PC TECH STORE بالاسم أو الماركة أو المواصفات." />
+  <meta name="theme-color" content="#0a1526" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231f5eff'/%3E%3Ctext x='50' y='69' font-family='Arial' font-size='44' font-weight='bold' fill='white' text-anchor='middle'%3ETP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=1" />
+</head>
+<body data-page="search">
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <div id="siteHeader"></div>
+
+  <main id="main">
+    <section class="search-hero">
+      <div class="wrap">
+        <h1>ابحث عن جهازك</h1>
+        <p>اكتب اسم الماركة أو الموديل، أو ابدأ من الأكثر بحثاً.</p>
+        <form class="search-form" action="search.html" method="get" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+          <input id="searchInput" type="search" name="q" placeholder="مثال: Dell XPS، كارت 1660، شاشة 24…" aria-label="كلمة البحث" autocomplete="off" />
+          <button class="btn btn-primary" type="submit">ابحث</button>
+        </form>
+        <div class="trend-chips" id="trendChips"></div>
+      </div>
+    </section>
+
+    <div class="wrap search-body">
+      <div class="search-bar-info">
+        <p id="searchInfo"></p>
+        <label class="sort-field">
+          ترتيب حسب
+          <select id="searchSort" aria-label="ترتيب النتائج">
+            <option value="featured">الأكثر طلباً</option>
+            <option value="price-asc">الأرخص الأول</option>
+            <option value="price-desc">الأغلى الأول</option>
+            <option value="rating">الأعلى تقييم</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="product-grid" id="searchGrid"></div>
+      <div id="searchEmpty"></div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="assets/js/data.js?v=1" defer></script>
+  <script src="assets/js/main.js?v=1" defer></script>
+</body>
+</html>
